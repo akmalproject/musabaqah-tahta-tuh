@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#05676a">
+  <meta name="description" content="Website Musabaqah Tahsin, Tahfizh dan Tuhfatul Athfal 2026">
+
+  <title>MUSABAQAH TAHTA TUH 2026</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- =========================================================
+       PENYESUAIAN UKURAN FONT ISI
+       Tidak mengubah isi dan struktur HTML
+  ========================================================== -->
+
+  <style>
+
+    /* =========================================================
+       FONT ISI UMUM
+    ========================================================== */
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================== */
+
+    .hero-desc {
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+
+    /* =========================================================
+       SUBTITLE SECTION
+    ========================================================== */
+
+    .subtitle-text {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       JADWAL MUSABAQAH
+    ========================================================== */
+
+    .schedule-card p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       INFORMASI / ACCORDION
+    ========================================================== */
+
+    .content-inner p,
+    .content-inner li {
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+
+    .content-inner h4 {
+      font-size: 1.08rem;
+    }
+
+
+    /* =========================================================
+       ARENA MUSABAQAH
+    ========================================================== */
+
+    .arena-desc {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================== */
+
+    .registration-instruction {
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+
+    footer p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE MOBILE
+    ========================================================== */
+
+    @media (max-width: 768px) {
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+
+      .hero-desc {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+
+      .subtitle-text {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+
+      .content-inner p,
+      .content-inner li {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+
+      .content-inner h4 {
+        font-size: 1.05rem;
+      }
+
+
+      .schedule-card p {
+        font-size: 0.98rem;
+      }
+
+
+      .arena-desc {
+        font-size: 0.98rem;
+      }
+
+
+      .registration-instruction {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+
+      footer p {
+        font-size: 0.98rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- =========================================================
+       BACKGROUND DECORATION
+  ========================================================== -->
+
+  <div class="background-blur blur-one"></div>
+  <div class="background-blur blur-two"></div>
+  <div class="background-blur blur-three"></div>
+
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+
+  <nav class="navbar" id="navbar">
+
+    <div class="container nav-container">
+
+      <a href="#beranda" class="brand">
+
+        <div class="logo">
+          <i class="fa-solid fa-book-quran"></i>
+        </div>
+
+        <div class="brand-text">
+
+          <span class="brand-subtitle">
+            SD-SMP ISLAM RIYADHUS SHALIHIN, BEKASI.
+          </span>
+
+          <span class="brand-title">
+            Musabaqah Tahsin, Tahfizh, dan Tuhfatul Athfal
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- NAVBAR DESKTOP -->
+
+      <div class="desktop-nav">
+
+        <a href="#jadwal" class="nav-link">
+
+          <i class="fa-solid fa-calendar-days"></i>
+
+          <span>
+            Jadwal Musabaqah
+          </span>
+
+        </a>
+
+
+        <a href="#informasi" class="nav-link">
+
+          <i class="fa-solid fa-circle-info"></i>
+
+          <span>
+            Informasi Umum
+          </span>
+
+        </a>
+
+
+        <a href="#arena" class="nav-link">
+
+          <i class="fa-solid fa-microphone-lines"></i>
+
+          <span>
+            Arena Musabaqah
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <!-- MOBILE MENU BUTTON -->
+
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Buka menu"
+      >
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+
+      <div class="status-badge">
+
+        <span class="pulse"></span>
+
+        <span>
+          Pendaftaran 1–10 Oktober
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+      <a href="#beranda" class="mobile-nav-link">
+
+        <i class="fa-solid fa-house"></i>
+
+        Beranda
+
+      </a>
+
+
+      <a href="#jadwal" class="mobile-nav-link">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        Jadwal Musabaqah
+
+      </a>
+
+
+      <a href="#informasi" class="mobile-nav-link">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        Informasi Umum
+
+      </a>
+
+
+      <a href="#arena" class="mobile-nav-link">
+
+        <i class="fa-solid fa-microphone-lines"></i>
+
+        Arena Musabaqah
+
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <main>
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <header
+      class="hero-section"
+      id="beranda"
+    >
+
+      <div class="hero-pattern"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+          <div class="hero-tag">
+
+            <i class="fa-solid fa-star"></i>
+
+            Tahun Ajaran 2026-2027
+
+          </div>
+
+
+          <div class="arabic-text">
+
+            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+
+          </div>
+
+
+          <h1 class="hero-title">
+
+            Lantunkan Ayat Suci,
+
+            <br>
+
+            <span>
+              Mulia bersama Al-Qur'an
+            </span>
+
+          </h1>
+
+
+          <p class="hero-desc">
+
+            Meningkatkan kecintaan generasi muda terhadap Al-Qur’an dan ilmu agama serta membentuk generasi Qur’ani yang memiliki semangat dalam belajar, membaca, menghafal, menjaga, dan mengamalkan Al-Qur’an.
+
+          </p>
+
+
+          <!-- GAMBAR AL-QURAN -->
+
+          <div class="quran-image-wrapper">
+
+            <div class="quran-decoration decoration-one"></div>
+
+            <div class="quran-decoration decoration-two"></div>
+
+            <img
+              src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=900&q=85"
+              alt="Al-Qur'an"
+              class="quran-image"
+            >
+
+          </div>
+
+
+          <!-- COUNTDOWN -->
+
+          <div class="countdown-wrapper">
+
+            <div class="countdown-title">
+
+              <i class="fa-regular fa-clock"></i>
+
+              <span>
+
+                Pendaftaran Dibuka:
+
+                <strong>
+                  1–10 Oktober 2026
+                </strong>
+
+              </span>
+
+            </div>
+
+
+            <div
+              class="countdown-grid"
+              id="countdown-container"
+            >
+
+              <div class="time-box">
+
+                <span id="days">
+                  00
+                </span>
+
+                <small>
+                  Hari
+                </small>
+
+              </div>
+
+
+              <div class="time-box">
+
+                <span id="hours">
+                  00
+                </span>
+
+                <small>
+                  Jam
+                </small>
+
+              </div>
+
+
+              <div class="time-box">
+
+                <span id="minutes">
+                  00
+                </span>
+
+                <small>
+                  Menit
+                </small>
+
+              </div>
+
+
+              <div class="time-box">
+
+                <span id="seconds">
+                  00
+                </span>
+
+                <small>
+                  Detik
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <div
+              id="countdown-message"
+              class="countdown-message"
+            ></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         JADWAL PENTING
+    ========================================================== -->
+
+    <section
+      class="schedule-section reveal-section"
+      id="jadwal"
+    >
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <span class="tag-title">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            Jadwal Musabaqah
+
+          </span>
+
+
+          <h2>
+            Rangkaian Musabaqah TAHTA TUH
+          </h2>
+
+
+          <p class="subtitle-text">
+
+            Catat seluruh tahapan pelaksanaan agar tidak terlewat.
+
+          </p>
+
+        </div>
+
+
+        <div class="schedule-grid">
+
+
+          <div class="schedule-card reveal-card">
+
+            <div class="schedule-icon">
+
+              <i class="fa-solid fa-pen-to-square"></i>
+
+            </div>
+
+            <div>
+
+              <span class="schedule-label">
+                Pendaftaran
+              </span>
+
+              <h3>
+                1–10 Oktober 2026
+              </h3>
+
+              <p>
+                Pendaftaran dan koordinasi peserta.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="schedule-card reveal-card">
+
+            <div class="schedule-icon">
+
+              <i class="fa-solid fa-bullhorn"></i>
+
+            </div>
+
+            <div>
+
+              <span class="schedule-label">
+                Pengumuman Finalis
+              </span>
+
+              <h3>
+                14 Oktober 2026
+              </h3>
+
+              <p>
+                Pengumuman peserta yang melaju ke babak final.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="schedule-card reveal-card">
+
+            <div class="schedule-icon">
+
+              <i class="fa-solid fa-trophy"></i>
+
+            </div>
+
+            <div>
+
+              <span class="schedule-label">
+                Grand Final
+              </span>
+
+              <h3>
+                27–29 Oktober 2026
+              </h3>
+
+              <p>
+                Pelaksanaan grand final tahsin dan tuhfah.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="schedule-card reveal-card">
+
+            <div class="schedule-icon">
+
+              <i class="fa-solid fa-medal"></i>
+
+            </div>
+
+            <div>
+
+              <span class="schedule-label">
+                Grand Final
+              </span>
+
+              <h3>
+                3–5 November 2026
+              </h3>
+
+              <p>
+                Pelaksanaan grand final tahfizh.
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         INFORMASI UMUM / JUKNIS
+    ========================================================== -->
+
+    <section
+      class="info-section reveal-section"
+      id="informasi"
+    >
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <span class="tag-title">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            Informasi Umum
+
+          </span>
+
+
+          <h2>
+            Juknis & Ketentuan Musabaqah
+          </h2>
+
+
+          <p class="subtitle-text">
+
+            Silakan buka setiap bagian berikut untuk membaca informasi secara lengkap.
+
+          </p>
+
+        </div>
+
+
+        <div class="accordion-group">
+
+
+          <!-- 01 -->
+
+          <div class="accordion-item reveal-card">
+
+            <button
+              class="accordion-header"
+              type="button"
+              onclick="toggleAccordion(this)"
+              aria-expanded="false"
+            >
+
+              <div class="acc-title">
+
+                <span class="acc-num">
+                  01
+                </span>
+
+                <span>
+                  Informasi Umum Musabaqah
+                </span>
+
+              </div>
+
+              <i class="fa-solid fa-chevron-down icon-chevron"></i>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div class="content-inner">
+
+                <h4>
+
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Tujuan Musabaqah
+
+                </h4>
+
+
+                <p>
+
+                  Meningkatkan kecintaan generasi muda terhadap Al-Qur’an dan ilmu agama serta membentuk generasi Qur’ani yang memiliki semangat dalam belajar, membaca, menghafal, menjaga, dan mengamalkan Al-Qur’an
+
+                </p>
+
+
+                <h4>
+
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Ketentuan Umum
+
+                </h4>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Musabaqah terdiri dari 2 babak dengan teknis yang berbeda : Penyisihan & Final
+                  </li>
+
+                  <li>
+                    Babak penyisihan bisa diikuti oleh seluruh peserta didik.
+                  </li>
+
+                  <li>
+                    Setiap peserta didik diperbolehkan mengikuti semua cabang lomba. Syarat dan Ketentuan Berlaku.
+                  </li>
+
+                  <li>
+                    Juara ikhwan dan akhwat dibedakan.
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 02 -->
+
+          <div class="accordion-item reveal-card">
+
+            <button
+              class="accordion-header"
+              type="button"
+              onclick="toggleAccordion(this)"
+              aria-expanded="false"
+            >
+
+              <div class="acc-title">
+
+                <span class="acc-num">
+                  02
+                </span>
+
+                <span>
+                  Petunjuk Musabaqah Babak Penyisihan
+                </span>
+
+              </div>
+
+              <i class="fa-solid fa-chevron-down icon-chevron"></i>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div class="content-inner">
+
+                <h4>
+
+                  <i class="fa-solid fa-list-ol"></i>
+
+                  Peserta membuat rekaman video dengan materi bacaan yang sudah ditentukan pada setiap cabang musabaqah.
+
+                </h4>
+
+
+                <ol class="content-list numbered">
+
+                  <li>
+                    Rekaman video dari jarak 0,5 meter
+                  </li>
+
+                  <li>
+                    Mengenakan seragam hari Selasa
+                  </li>
+
+                  <li>
+                    Untuk cabang Tahfizh & Tuhfah, saat membuat rekaman dilarang melihat mushaf Al Qur'an atau buku matan tajwid (jika dicurigai bisa terkena diskualifikasi).
+                  </li>
+
+                  <li>
+                    Kirim video ke grup dengan menuliskan Nama Lengkap/Kelas.
+                  </li>
+
+                </ol>
+
+
+                <div class="info-note">
+
+                  <i class="fa-solid fa-lightbulb"></i>
+
+                  <div>
+
+                    <strong>
+                      Catatan:
+                    </strong>
+
+                    <p>
+                      Setelah mengirim rekaman video peserta keluar dari grup.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 03 -->
+
+          <div class="accordion-item reveal-card">
+
+            <button
+              class="accordion-header"
+              type="button"
+              onclick="toggleAccordion(this)"
+              aria-expanded="false"
+            >
+
+              <div class="acc-title">
+
+                <span class="acc-num">
+                  03
+                </span>
+
+                <span>
+                  Materi Babak Penyisihan
+                </span>
+
+              </div>
+
+              <i class="fa-solid fa-chevron-down icon-chevron"></i>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div class="content-inner">
+
+                <h4>
+
+                  <i class="fa-solid fa-book-open"></i>
+
+                  Materi Tahsin
+
+                </h4>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Surat Luqman ayat : 12-15
+                  </li>
+
+                </ul>
+
+
+                <h4>
+
+                  <i class="fa-solid fa-book-quran"></i>
+
+                  Materi Tahfizh
+
+                </h4>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Kelas 1 : Al Qari’ah
+                  </li>
+
+                  <li>
+                    Kelas 2 : As Syams
+                  </li>
+
+                  <li>
+                    Kelas 3 : Al Buruj 9-14
+                  </li>
+
+                  <li>
+                    Kelas 4 : Al Mursalat 20-34
+                  </li>
+
+                  <li>
+                    Kelas 5 : Nuh 23-28
+                  </li>
+
+                  <li>
+                    Kelas 6 : Al Mulk 16-21
+                  </li>
+
+                  <li>
+                    Kelas 7 : Al Fajr 15-24
+                  </li>
+
+                  <li>
+                    Kelas 8 : Al Haqqah 20-35
+                  </li>
+
+                  <li>
+                    Kelas 9 : Al Hasyr 6-7
+                  </li>
+
+                </ul>
+
+
+                <h4>
+
+                  <i class="fa-solid fa-feather"></i>
+
+                  Materi Tuhfatul Athfal
+
+                </h4>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Kelas 4-6 : Bait ke 6-10
+                  </li>
+
+                  <li>
+                    Kelas 7-9 : Bait ke 11-15
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 04 -->
+
+          <div class="accordion-item reveal-card">
+
+            <button
+              class="accordion-header"
+              type="button"
+              onclick="toggleAccordion(this)"
+              aria-expanded="false"
+            >
+
+              <div class="acc-title">
+
+                <span class="acc-num">
+                  04
+                </span>
+
+                <span>
+                  Petunjuk Musabaqah Babak Final
+                </span>
+
+              </div>
+
+              <i class="fa-solid fa-chevron-down icon-chevron"></i>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div class="content-inner">
+
+                <h4>
+
+                  <i class="fa-solid fa-trophy"></i>
+
+                  Pelaksanaan Final
+
+                </h4>
+
+
+                <p>
+                  Pengumuman finalis dilakukan pada tanggal 14 oktober 2026.
+                </p>
+
+
+                <div class="final-schedule">
+
+                  <div class="final-date">
+
+                    <span class="date-icon">
+                      <i class="fa-solid fa-calendar"></i>
+                    </span>
+
+                    <div>
+
+                      <strong>
+                        27–29 Oktober 2026
+                      </strong>
+
+                      <span>
+                        Grand Final Tahsin dan Tuhfah
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  <div class="final-date">
+
+                    <span class="date-icon">
+                      <i class="fa-solid fa-calendar"></i>
+                    </span>
+
+                    <div>
+
+                      <strong>
+                        3–5 November 2026
+                      </strong>
+
+                      <span>
+                        Grand Final Tahfizh
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Waktu final musabaqah akan dilaksanakan pada tanggal berikut :
+                  </li>
+
+                  <li>
+                    Cabang Tahsin Kelas 1 - 3 : 27 Oktober 2026
+                  </li>
+
+                  <li>
+                    Cabang Tuhfah Kelas 4 - 6 : 28 Oktober 2026
+                  </li>
+
+                  <li>
+                    Cabang Tuhfah Kelas 7 - 9 : 29 Oktober 2026
+                  </li>
+
+                  <li>
+                    Cabang Tahfizh Kelas 1 - 3 : 03 November 2026
+                  </li>
+
+                  <li>
+                    Cabang Tahfizh Kelas 4 - 6 : 04 November 2026
+                  </li>
+
+                  <li>
+                    Cabang Tahfizh Kelas 7- 9 : 05 November 2026
+                  </li>
+
+                  <li>
+                    Waktu pelaksanaan adalah jam tahfizh masing-masing (sesuai waktu halaqah).
+                  </li>
+
+                  <li>
+                    Tempat pelaksanaan berada di Masjid Riyadhus Shalihin lantai 3.
+                  </li>
+
+                  <li>
+                    Pengumuman juara insya Allah diinformasikan menyusul.
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 05 -->
+
+          <div class="accordion-item reveal-card">
+
+            <button
+              class="accordion-header"
+              type="button"
+              onclick="toggleAccordion(this)"
+              aria-expanded="false"
+            >
+
+              <div class="acc-title">
+
+                <span class="acc-num">
+                  05
+                </span>
+
+                <span>
+                  Materi Babak Final
+                </span>
+
+              </div>
+
+              <i class="fa-solid fa-chevron-down icon-chevron"></i>
+
+            </button>
+
+
+            <div class="accordion-content">
+
+              <div class="content-inner">
+
+                <h4>
+
+                  <i class="fa-solid fa-ranking-star"></i>
+
+                  Penilaian Final
+
+                </h4>
+
+
+                <div class="assessment-grid">
+
+                  <div class="assessment-card">
+
+                    <strong>
+                      40%
+                    </strong>
+
+                    <span>
+                      Tahsin & Tajwid
+                    </span>
+
+                    <p>
+                      Makharijul huruf, sifat huruf dan penerapan hukum tajwid.
+                    </p>
+
+                  </div>
+
+
+                  <div class="assessment-card">
+
+                    <strong>
+                      40%
+                    </strong>
+
+                    <span>
+                      Tahfizh / Kelancaran
+                    </span>
+
+                    <p>
+                      Kelancaran hafalan dan ketepatan bacaan.
+                    </p>
+
+                  </div>
+
+
+                  <div class="assessment-card">
+
+                    <strong>
+                      20%
+                    </strong>
+
+                    <span>
+                      Fashahah & Adab
+                    </span>
+
+                    <p>
+                      Fashahah, tartil dan adab ketika membaca Al-Qur'an.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <h4>
+                  Materi Babak Final
+                </h4>
+
+
+                <ul class="content-list">
+
+                  <li>
+                    Cabang Tahsin: Surat Al Ahzab ayat : 69-73, Surat Al Isra’ ayat : 23-27, dan Surat An’am ayat : 162-165
+                  </li>
+
+                  <li>
+                    Cabang Tahfizh:
+                  </li>
+
+                  <li>
+                    Kelas 1: An Naas - Al Zalzalah
+                  </li>
+
+                  <li>
+                    Kelas 2: An Naas - Al Fajr
+                  </li>
+
+                  <li>
+                    Kelas 3: An Naas - An Naba'
+                  </li>
+
+                  <li>
+                    Kelas 4: An Naas - Al Jin
+                  </li>
+
+                  <li>
+                    Kelas 5: An Naas - Al Mulk
+                  </li>
+
+                  <li>
+                    Kelas 6: An Naas - Al Jumu'ah
+                  </li>
+
+                  <li>
+                    Kelas 7: An Naas - Al Ghasiyah
+                  </li>
+
+                  <li>
+                    Kelas 8: Juz 29 & 30
+                  </li>
+
+                  <li>
+                    Kelas 9: Juz 28 - 30
+                  </li>
+
+                </ul>
+
+
+                <div class="info-note">
+
+                  <i class="fa-solid fa-circle-info"></i>
+
+                  <div>
+
+                    <strong>
+                      Perhatian
+                    </strong>
+
+                    <p>
+                      Materi dan teknis pelaksanaan dapat disesuaikan dengan ketentuan resmi panitia.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         ARENA MUSABAQAH
+    ========================================================== -->
+
+    <section
+      class="arena-section reveal-section"
+      id="arena"
+    >
+
+      <div class="container">
+
+        <div class="section-header reveal">
+
+          <span class="tag-title">
+
+            <i class="fa-solid fa-microphone-lines"></i>
+
+            Arena Musabaqah
+
+          </span>
+
+
+          <h2>
+            Cabang & Grup Koordinasi
+          </h2>
+
+
+          <p class="subtitle-text">
+
+            Pilih cabang lomba sesuai kategori peserta,
+            kemudian bergabung ke grup WhatsApp.
+
+          </p>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="category-filter">
+
+          <button
+            class="filter-btn active"
+            data-filter="all"
+          >
+            Semua
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="tahsin"
+          >
+            Tahsin
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="tahfizh-sd"
+          >
+            Tahfizh SD
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="tahfizh"
+          >
+            Tahfizh SMP
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="tuhfatul-sd"
+          >
+            Tuhfatul Athfal SD
+          </button>
+
+
+          <button
+            class="filter-btn"
+            data-filter="tuhfatul-smp"
+          >
+            Tuhfatul Athfal SMP
+          </button>
+
+        </div>
+
+
+        <!-- =====================================================
+             GROUP TAHSIN
+        ====================================================== -->
+
+        <div class="arena-category-block reveal">
+
+          <div class="arena-category-heading">
+
+            <div class="category-heading-icon">
+
+              <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
+            <div>
+
+              <span>
+                CABANG TAHSIN
+              </span>
+
+              <h3>
+                Kelas 1–3
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="gender-row">
+
+
+            <!-- IKHWAN -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading ikhwan-heading">
+
+                <i class="fa-solid fa-mars"></i>
+
+                <span>
+                  IKHWAN
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tahsin"
+              >
+
+                <span class="arena-tag">
+                  Tahsin • Ikhwan
+                </span>
+
+                <h3>
+                  Tahsin Ikhwan Kelas 1-3
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang tahsin untuk peserta ikhwan.
+                </p>
+
+
+                <div class="arena-actions">
+
+                  <a
+                    href="https://chat.whatsapp.com/JpcoDKLIB9k50hhBj9YnOl"
+                    class="btn btn-wa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+
+            <!-- AKHWAT -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading akhwat-heading">
+
+                <i class="fa-solid fa-venus"></i>
+
+                <span>
+                  AKHWAT
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tahsin"
+              >
+
+                <span class="arena-tag">
+                  Tahsin • Akhwat
+                </span>
+
+                <h3>
+                  Tahsin Akhwat Kelas 1-3
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang tahsin untuk peserta akhwat.
+                </p>
+
+
+                <div class="arena-actions">
+
+                  <a
+                    href="https://chat.whatsapp.com/Gn7i29gHvXYDELzMg1jLPl"
+                    class="btn btn-wa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             TAHFIZH SD
+        ====================================================== -->
+
+        <div class="arena-category-block reveal">
+
+          <div class="arena-category-heading">
+
+            <div class="category-heading-icon">
+
+              <i class="fa-solid fa-book-quran"></i>
+
+            </div>
+
+            <div>
+
+              <span>
+                CABANG TAHFIZH SD
+              </span>
+
+              <h3>
+                Kelas 1–6
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="gender-row">
+
+
+            <!-- IKHWAN -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading ikhwan-heading">
+
+                <i class="fa-solid fa-mars"></i>
+
+                <span>
+                  IKHWAN
+                </span>
+
+              </div>
+
+
+              <div class="arena-grid gender-grid">
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 01
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 1.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/Dp3QBtAAWuJJ5LvlgVHhKL"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 02
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 2.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/IGwvSyGLM0F6nOxCLOwsAR"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 03
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 3.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/IKBobDhTpyyDsjKdL6u00s"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 04
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 4.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/C3OyVekoy0Z5sD1kWLq7Vz"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 05
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 5.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/EmGlfKUwDs7CgWEkd9jqbC"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Ikhwan 06
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD ikhwan kelas 6.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/KP7k8NGuS1Y9SPwn0opK3Y"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+
+            <!-- AKHWAT -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading akhwat-heading">
+
+                <i class="fa-solid fa-venus"></i>
+
+                <span>
+                  AKHWAT
+                </span>
+
+              </div>
+
+
+              <div class="arena-grid gender-grid">
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 01
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 1.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/GgBAhrT43JT8HSOBEqD9aq"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 02
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 2.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/GpdEik1huro26fr0fezlQv"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 03
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 3.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/KMgeMHXEMvFIz677Eou0Xj"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 04
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 4.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/KlHoByl1fhEJcYpXxr7Q4a"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 05
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 5.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/DDSCRMfb8GIBh0IMBEfJHA"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh-sd"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SD • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SD Akhwat 06
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi peserta tahfizh SD akhwat kelas 6.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/KokvqaSiTca8ygZYuBFJMH"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             TAHFIZH SMP
+        ====================================================== -->
+
+        <div class="arena-category-block reveal">
+
+          <div class="arena-category-heading">
+
+            <div class="category-heading-icon">
+
+              <i class="fa-solid fa-book-quran"></i>
+
+            </div>
+
+            <div>
+
+              <span>
+                CABANG TAHFIZH SMP
+              </span>
+
+              <h3>
+                Kelas 7–9
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="gender-row">
+
+
+            <!-- IKHWAN -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading ikhwan-heading">
+
+                <i class="fa-solid fa-mars"></i>
+
+                <span>
+                  IKHWAN
+                </span>
+
+              </div>
+
+
+              <div class="arena-grid gender-grid">
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Ikhwan 07
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh ikhwan kelas 7.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/IIG38hPlfLD4oIBbl48CVJ"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Ikhwan 08
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh ikhwan kelas 8.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/GNGElfBvpMmAQhzl3TZrNd"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Ikhwan
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Ikhwan 09
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh ikhwan kelas 9.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/H2U4I2mST4KDFg4ROlO5Y3"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+
+            <!-- AKHWAT -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading akhwat-heading">
+
+                <i class="fa-solid fa-venus"></i>
+
+                <span>
+                  AKHWAT
+                </span>
+
+              </div>
+
+
+              <div class="arena-grid gender-grid">
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Akhwat 07
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh akhwat kelas 7.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/CiVxnwEKFJN9Vb7JWkvJoZ"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Akhwat 08
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh akhwat kelas 8.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/Ka8oMoZuClI12yUS3bQECc"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+
+                <article
+                  class="arena-card"
+                  data-category="tahfizh"
+                >
+
+                  <span class="arena-tag">
+                    Tahfizh SMP • Akhwat
+                  </span>
+
+                  <h3>
+                    Tahfizh SMP Akhwat 09
+                  </h3>
+
+                  <p class="arena-desc">
+                    Grup koordinasi tahfizh akhwat kelas 9.
+                  </p>
+
+                  <div class="arena-actions">
+
+                    <a
+                      href="https://chat.whatsapp.com/JvLINUmtejXLCnkbFwzCNa"
+                      class="btn btn-wa"
+                      target="_blank"
+                    >
+
+                      <i class="fa-brands fa-whatsapp"></i>
+
+                      Grup WhatsApp
+
+                    </a>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             TUHFATUL ATHFAL SD
+        ====================================================== -->
+
+        <div class="arena-category-block reveal">
+
+          <div class="arena-category-heading">
+
+            <div class="category-heading-icon">
+
+              <i class="fa-solid fa-feather"></i>
+
+            </div>
+
+            <div>
+
+              <span>
+                CABANG TUHFATUL ATHFAL SD
+              </span>
+
+              <h3>
+                Kelas 4–6
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="gender-row">
+
+
+            <!-- IKHWAN -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading ikhwan-heading">
+
+                <i class="fa-solid fa-mars"></i>
+
+                <span>
+                  IKHWAN
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tuhfatul-sd"
+              >
+
+                <span class="arena-tag">
+                  Tuhfatul Athfal SD • Ikhwan
+                </span>
+
+                <h3>
+                  Tuhfatul Athfal SD Ikhwan
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang Tuhfatul Athfal kelas 4-6 SD untuk peserta ikhwan.
+                </p>
+
+
+                <div class="arena-actions grid-2">
+
+                  <a
+                    href="https://chat.whatsapp.com/HGaGqzbQmyhH6sTIvZoART"
+                    class="btn btn-wa"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+
+                  <a
+                    href="https://youtube.com/playlist?list=PLPiSrbCJQhlwWdff2WXDiHFl6K-I86cmU&si=2zH02IxHlf0BTpn0"
+                    class="btn btn-yt"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    YouTube
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+
+            <!-- AKHWAT -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading akhwat-heading">
+
+                <i class="fa-solid fa-venus"></i>
+
+                <span>
+                  AKHWAT
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tuhfatul-sd"
+              >
+
+                <span class="arena-tag">
+                  Tuhfatul Athfal SD • Akhwat
+                </span>
+
+                <h3>
+                  Tuhfatul Athfal SD Akhwat
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang Tuhfatul Athfal kelas 4-6 SD untuk peserta akhwat.
+                </p>
+
+
+                <div class="arena-actions grid-2">
+
+                  <a
+                    href="https://chat.whatsapp.com/J6GwzVjN0dCFI3b2ba31wD"
+                    class="btn btn-wa"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+
+                  <a
+                    href="https://youtube.com/playlist?list=PLPiSrbCJQhlwWdff2WXDiHFl6K-I86cmU&si=2zH02IxHlf0BTpn0"
+                    class="btn btn-yt"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    YouTube
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             TUHFATUL ATHFAL SMP
+        ====================================================== -->
+
+        <div class="arena-category-block reveal">
+
+          <div class="arena-category-heading">
+
+            <div class="category-heading-icon">
+
+              <i class="fa-solid fa-feather"></i>
+
+            </div>
+
+            <div>
+
+              <span>
+                CABANG TUHFATUL ATHFAL SMP
+              </span>
+
+              <h3>
+                Kelas 7–9
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <div class="gender-row">
+
+
+            <!-- IKHWAN -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading ikhwan-heading">
+
+                <i class="fa-solid fa-mars"></i>
+
+                <span>
+                  IKHWAN
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tuhfatul-smp"
+              >
+
+                <span class="arena-tag">
+                  Tuhfatul Athfal SMP • Ikhwan
+                </span>
+
+                <h3>
+                  Tuhfatul Athfal SMP Ikhwan
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang Tuhfatul Athfal tingkat SMP untuk peserta ikhwan.
+                </p>
+
+
+                <div class="arena-actions grid-2">
+
+                  <a
+                    href="https://chat.whatsapp.com/GMOz2D4G6X2Dkz6jwrfAp1"
+                    class="btn btn-wa"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+
+                  <a
+                    href="https://youtube.com/playlist?list=PLPiSrbCJQhlwWdff2WXDiHFl6K-I86cmU&si=2zH02IxHlf0BTpn0"
+                    class="btn btn-yt"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    YouTube
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+
+            <!-- AKHWAT -->
+
+            <div class="gender-group">
+
+              <div class="gender-heading akhwat-heading">
+
+                <i class="fa-solid fa-venus"></i>
+
+                <span>
+                  AKHWAT
+                </span>
+
+              </div>
+
+
+              <article
+                class="arena-card"
+                data-category="tuhfatul-smp"
+              >
+
+                <span class="arena-tag">
+                  Tuhfatul Athfal SMP • Akhwat
+                </span>
+
+                <h3>
+                  Tuhfatul Athfal SMP Akhwat
+                </h3>
+
+                <p class="arena-desc">
+                  Cabang Tuhfatul Athfal tingkat SMP untuk peserta akhwat.
+                </p>
+
+
+                <div class="arena-actions grid-2">
+
+                  <a
+                    href="https://chat.whatsapp.com/HlGbUvpkReC8EZE1SR5Qrr"
+                    class="btn btn-wa"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Grup WhatsApp
+
+                  </a>
+
+
+                  <a
+                    href="https://youtube.com/playlist?list=PLPiSrbCJQhlwWdff2WXDiHFl6K-I86cmU&si=2zH02IxHlf0BTpn0"
+                    class="btn btn-yt"
+                    target="_blank"
+                  >
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    YouTube
+
+                  </a>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section
+      class="cta-section reveal-section"
+    >
+
+      <div class="container">
+
+        <div class="cta-card reveal">
+
+          <span class="cta-tag">
+
+            <i class="fa-solid fa-pen-to-square"></i>
+
+            Prosedur Pendaftaran
+
+          </span>
+
+
+          <h3>
+            Siap Mengikuti Musabaqah?
+          </h3>
+
+
+          <p class="registration-instruction">
+
+            Pilih kategori lomba yang sesuai,
+            kemudian klik tombol
+            <strong>Grup WhatsApp</strong>
+            untuk bergabung dengan grup koordinasi cabang.
+
+            <br><br>
+
+            Pastikan menggunakan link grup yang diberikan
+            oleh panitia.
+
+          </p>
+
+
+          <a
+            href="#arena"
+            class="cta-button"
+            onclick="scrollToArena(event)"
+          >
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+            Lihat Cabang Lomba
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div class="logo footer-logo">
+
+        <i class="fa-solid fa-book-quran"></i>
+
+      </div>
+
+
+      <h4>
+        Musabaqah Tahsin, Tahfizh & Tuhfatul Athfal
+      </h4>
+
+
+      <p>
+        “Menumbuhkan Generasi Qur’ani yang Cinta Al-Qur’an, Berilmu, Berakhlak, dan Berprestasi.”
+      </p>
+
+
+      <div class="copyright">
+
+        &copy; Created by: Abu Aydeen Akmal.
+        Hak Cipta Dilindungi Undang-Undang.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
